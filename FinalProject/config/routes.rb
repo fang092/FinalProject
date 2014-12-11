@@ -12,5 +12,5 @@ Rails.application.routes.draw do
 
   get 'picklist' => 'static_pages#picklist'
 
-  
+  resources :users
 end

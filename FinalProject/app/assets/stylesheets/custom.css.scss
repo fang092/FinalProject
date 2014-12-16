@@ -18,9 +18,11 @@ $gray-medium-light: #eaeaea;
 
 html {
   overflow-y: scroll;
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
 }
 
 body {
+
   padding-top: 60px;
   background-color:#3D59AB;
 }
@@ -103,6 +105,7 @@ p {
 /* footer */
 
 footer {
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
@@ -180,11 +183,15 @@ input {
 .custompanel
 {
   background-color:rgb(236,28,77);
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+  font-weight:bold;
   color:white;
 }
 .customtable
 {
   background-color:white;
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+  font-weight:normal;
   color:black;
 }
 .customnav

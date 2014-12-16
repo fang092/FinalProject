@@ -1,15 +1,15 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top customnav">
       <div class="container">
         <%= link_to "Fantasy Baseball", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav pull-right">
-            <li><%= link_to "Home",   root_path %></li>
-            <li><%= link_to "Draft",   draft_path %></li>
-            <li><%= link_to "Roster",   roster_path %></li>
+            <li><%= link_to "Home",   root_path, class: 'customnavlinks' %></li>
+            <li><%= link_to "Draft",   draft_path, class: 'customnavlinks' %></li>
+            <li><%= link_to "Roster",   roster_path, class: 'customnavlinks' %></li>
             <% if logged_in? %>
-            <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+            <li><%= link_to "Log out", logout_path, method: "delete", class: 'customnavlinks' %></li>
             <% else %>
-            <li><%= link_to "Log in", login_path %></li>
+            <li><%= link_to "Log in", login_path, class: 'customnavlinks' %></li>
             <% end %>
           </ul>
         </nav>

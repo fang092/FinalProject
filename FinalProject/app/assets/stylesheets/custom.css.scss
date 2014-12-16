@@ -22,7 +22,7 @@ html {
 
 body {
   padding-top: 60px;
-  background-color:#27408B;
+  background-color:#3D59AB;
 }
 
 section {
@@ -43,9 +43,10 @@ textarea {
   padding-top:10px;
   padding-bottom:10px;
 }
+
 .btn
 {
-  background-color:#EE3B3B;  
+  background-color:rgb(236,28,77);  
 }
 /* typography */
 
@@ -78,20 +79,25 @@ p {
 
 /* header */
 
-#logo {
+#logo 
+{
   float: left;
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+  
 
-margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
+    margin-right: 10px;
+    font-size: 1.7em;
     color: white;
-    text-decoration: none;
-  }
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+
+    &:hover 
+    {
+      color: white;
+      text-decoration: none;
+    }
 }
 
 /* footer */
@@ -102,7 +108,8 @@ footer {
   border-top: 1px solid $gray-medium-light;
   color: white;
   a {
-    color: red;
+    font-weight:bold;
+    color: rgb(236,28,77);
     &:hover {
       color: $gray-darker;
     }
@@ -146,9 +153,9 @@ input {
   height: auto !important;
 }
 #error_explanation {
-  color: red;
+  color: rgb(236,28,77);
   ul {
-    color: red;
+    color: rgb(236,28,77);
     margin: 0 0 30px 0;
   }
 }
@@ -158,4 +165,39 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+.formsjumbotron
+{
+  h1 
+  {
+    margin-bottom: 10px;
+  }
+  margin-top:15px;
+  margin-bottom: 5px;
+  padding-top:10px;
+  padding-bottom:25px;
+}
+.custompanel
+{
+  background-color:rgb(236,28,77);
+  color:white;
+}
+.customtable
+{
+  background-color:white;
+  color:black;
+}
+.customnav
+{
+  background-color:#191970;
+  color:white;
+}
+.customnavlinks
+{
+    font-family: Copperplate,Copperplate Gothic Light,fantasy;
+    color: white;
+    &:hover 
+    {
+      color: rgb(236,28,77);
+    }
 }

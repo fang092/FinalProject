@@ -7,16 +7,16 @@
 	    <%= form_for(@pick) do |f| %>
 
 	      <%= f.label :round %>
-	      <%= f.text_field :round, class: 'form-control', value: nextRound(@lastPick.pick) %>
+	      <%= f.text_field :round, class: 'form-control', value: @pick.round %>
 
 	      <%= f.label :pick %>
-	      <%= f.text_field :pick, class: 'form-control', value: nextPick(@lastPick.pick) %>
+	      <%= f.text_field :pick, class: 'form-control', value: @pick.pick %>
 
 	      <%= f.label :user %>
 	      <%= f.text_field :user, class: 'form-control', value: current_user.name %>
 
 	      <%= f.label :team %>
-	      <%= f.text_field :team, class: 'form-control', value: nextTeam(@lastPick.round, @lastPick.pick) %>
+	      <%= f.text_field :team, class: 'form-control', value: @pick.team %>
 
 	      <%= f.label :player %>
 	      <%= f.text_field :player, class: 'form-control' %>
